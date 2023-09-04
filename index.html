@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            display: inline-block;
+            width: 40px;
+        }
+        #min{
+            color: brown;
+        }
+         #sec{
+            color: burlywood;
+         }
+        #msec{
+            color: tomato;
+        }
+        body{
+            background-color: antiquewhite;
+        }
+        #main{
+           text-align: center;
+           background-color: aqua;
+           width: 300px;
+           height: 200px;
+            margin: auto;
+            position: relative;
+            top: 100px;
+        }
+        #start{
+            width: 70px;
+            height: 30px;
+            background-color: turquoise;
+            color: black;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+        #pause{
+            width: 70px;
+            height: 30px;
+            background-color: darkgoldenrod;
+            color: black;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 900;   
+        }
+        #reset{
+            width: 70px;
+            height: 30px;
+            background-color: teal;
+            color: black;
+            border: none;
+            text-transform: uppercase;
+            font-weight: 900;
+        }
+
+        #bt{
+            display: flex;
+            justify-content: space-evenly;
+            position: relative;
+            top: 60px;
+        }
+        #num{
+            position: relative;
+            top: 20px;
+            left: 10px;
+            box-shadow: 2px 2px 5px rgba(128, 128, 128, 0.628);
+            width: 280px;
+            
+        }
+    </style>
+</head>
+<body >
+  <div id="main">
+   <div id="num">
+    <h2 id="min">0</h2>    
+    <h2>:</h2>
+    <h2 id="sec">0</h2>
+    <h2>:</h2>
+    <h2 id="msec">0</h2>
+
+   </div>
+   <div id="bt">
+    <button id="start" onclick="start()">start</button>
+    <button id="pause" onclick="pause()"> pause</button>
+    <button id="reset" onclick="reset()">reset</button>
+   </div> 
+</div>
+<script src="app.js"></script>
+</body>
+
+</html>
